@@ -1,0 +1,26 @@
+@import "./style/fonts.scss";
+@import "./style/scss-variables";
+
+body {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  line-height: 1;
+  // background: $bg-linear-gradt;
+  font-family: "Georama", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-weight: 400;
+  // color: $clear-gray;
+  color: #000;
+}
+
+a {
+  text-decoration: none;
+  list-style-type: none;
+  color: #fff;
+  cursor: pointer;
+}

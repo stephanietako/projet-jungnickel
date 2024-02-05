@@ -1,0 +1,12 @@
+@mixin blocsTxt($height, $width, $left) {
+  height: $height;
+  width: $width;
+  left: $left;
+  display: flex;
+  position: relative;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  bottom: 0;
+  right: 0;
+  border: 4px solid turquoise;
+}
