@@ -8,6 +8,7 @@ import menu from "../../assets/icon/menu.png";
 import cross from "../../assets/icon/cross.png";
 // Styles
 import styles from "./styles.module.scss";
+import IconContact from "../IconContact";
 
 const Navbar = () => {
   const navbarElement = useRef(null);
@@ -48,7 +49,6 @@ const Navbar = () => {
     { name: "Implantologie", target: "#implantologie" },
     { name: "Esthétique", target: "#esthetique" },
     { name: "Soins", target: "#soins" },
-    { name: "Contact", target: "#contact" },
   ];
 
   return (
@@ -57,7 +57,7 @@ const Navbar = () => {
       className={fix ? `${styles.navbar} ${styles.fixed}` : `${styles.navbar}`}
     >
       <a href="#welcome">
-        <img className={styles.__logo} src={logo} alt="Tako dev logo" />
+        <img className={styles.__logo} src={logo} alt="logo test" />
       </a>
       <div className={styles.__nav_menu}>
         <div className={styles.__menu_content}>
@@ -88,6 +88,9 @@ const Navbar = () => {
             ))}
           </div>
         )}
+      </div>
+      <div>
+        <IconContact />
       </div>
     </nav>
   );
