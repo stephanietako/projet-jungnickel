@@ -4,10 +4,10 @@
   display: flex;
   bottom: 0;
   width: 100%;
-  width: 100%;
   height: 100%;
   border-top: 1px solid $color-clear-dark;
   background: $bg-linear-gradt;
+
   .__container {
     display: flex;
     align-items: center;
@@ -21,8 +21,8 @@
     padding: 1rem;
 
     .__logo {
-      width: auto;
-      max-height: 2rem;
+      width: 2rem;
+      height: auto;
     }
 
     .__copyright {

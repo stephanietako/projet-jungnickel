@@ -64,6 +64,9 @@ const Navbar = () => {
           {links.map((link) => (
             <Links key={uuidv4()} link={link} onClick={toggleMenu} />
           ))}
+          <span className={styles.__nav_btn}>
+            <IconContact />
+          </span>
         </div>
       </div>
       <div className={styles.__nav_burger_menu}>
@@ -88,9 +91,6 @@ const Navbar = () => {
             ))}
           </div>
         )}
-      </div>
-      <div>
-        <IconContact />
       </div>
     </nav>
   );

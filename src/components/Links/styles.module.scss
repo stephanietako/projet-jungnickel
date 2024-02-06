@@ -31,9 +31,8 @@
     font-size: 14px;
     width: 100%;
     font-weight: bolder;
-    position: relative;
+    position: sticky;
     z-index: 11;
-    padding: 1.5rem;
     cursor: pointer;
     color: #fff;
     &:hover {
