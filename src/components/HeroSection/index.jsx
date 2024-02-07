@@ -1,11 +1,12 @@
 // Styles
 import styles from "./styles.module.scss";
 import Button from "../../components/Button";
+import Contact from "../../components/Contact";
 // Assets
 // import heroimg from "../../assets/images/implants.jpeg";
 const HeroSection = () => {
   const linkToAbout = {
-    name: "Contact",
+    name: "Où sommes-nous",
     target: "#contact",
   };
   return (
@@ -13,13 +14,13 @@ const HeroSection = () => {
       <div className={styles.hero_container}>
         <div className={styles.__hero_image}></div>
         <div className={styles.__hero_txt}>
-          <h1>I am John Doe</h1>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime
-            mollitia,molestiae quas vel sint commodi repudiandae consequuntur
-            voluptatum laborumnum uam blanditiis harum quisquam eius sed odit
-            fugiat iusto fuga praesentium.
-          </p>
+          <Contact
+            address={"10 Avenue Paul-Roussel \n 83990 \n Saint-Tropez"}
+            phone={<a href="tel:+33494970211">0494970211</a>}
+            mail={
+              <a href="mailto:dr.jungnickel@free.fr">dr.jungnickel@free.fr</a>
+            }
+          />
           <div className={styles.__button_box}>
             <Button link={linkToAbout} />
           </div>

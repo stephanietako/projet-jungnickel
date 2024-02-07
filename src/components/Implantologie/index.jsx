@@ -1,8 +1,7 @@
-import React from "react";
 // Styles
 import styles from "./styles.module.scss";
 
-const Traitements = ({ title, subtitle, text, textmobile }) => {
+const Traitements = ({ title, subtext, text, textmobile }) => {
   return (
     <div className={styles.implantologie}>
       <div className={styles.__container}>
@@ -11,14 +10,15 @@ const Traitements = ({ title, subtitle, text, textmobile }) => {
             <div className={styles.__regular_text}>
               <h1> {title}</h1>
               <span>
-                <h2>{subtitle}</h2>
+                <p className={styles.__subtext}>{subtext}</p>
               </span>
               <p>{text}</p>
             </div>
             <div className={styles.__bloc_txt_mobile}>
               <div className={styles.__text_mobile}>
+                <h1>{title}</h1>
                 <span>
-                  <h2>{subtitle}</h2>
+                  <p className={styles.__subtext}>{subtext}</p>
                 </span>
                 <p>{textmobile}</p>
               </div>

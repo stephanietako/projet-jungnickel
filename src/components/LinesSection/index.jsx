@@ -7,7 +7,6 @@ const LinesSection = ({ sections }) => {
           {index !== sections.length - 1 && (
             <hr
               style={{
-                width: "30%",
                 margin: "0 auto",
                 opacity: "0.4",
               }}
