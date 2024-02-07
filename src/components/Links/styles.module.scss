@@ -8,7 +8,7 @@
   height: 1rem;
   margin-left: 3rem;
   margin-right: 3rem;
-  box-shadow: -2px -2px 10px #dadae4, 2px 2px 10px #2c2c2f;
+  box-shadow: 1px 1px 2px $clear-gray, -1px -1px 2px #fff;
   transition: all 0.2s ease-in-out;
   cursor: pointer;
   border: 0;
@@ -20,11 +20,11 @@
   -webkit-appearance: none;
 
   &:hover {
-    box-shadow: -2px -2px 5px $regular-gray, 2px 2px 5px $color-shadow-dark;
+    box-shadow: inset 1px 1px 2px $clear-gray, inset -1px -1px 2px #fff;
   }
 
   &:active {
-    box-shadow: inset 1px 1px 2px $gray-color, inset -1px -1px 2px $regular-gray;
+    box-shadow: inset 1px 1px 2px $clear-gray, inset -1px -1px 2px #fff;
   }
 
   a {
@@ -40,7 +40,7 @@
       -webkit-transition: opacity 0.2s ease-out;
       -moz-transition: opacity 0.2s ease-out;
       -o-transition: opacity 0.2s ease-out;
-      color: $color-clear-dark;
+      color: #000080;
     }
   }
 }
@@ -61,7 +61,7 @@
     z-index: 11;
     padding: 0.5rem;
     cursor: pointer;
-    color: #fff;
+
     &:hover {
       opacity: 1;
       transition: opacity 0.5s ease-out;

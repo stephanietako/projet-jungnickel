@@ -8,7 +8,7 @@
   justify-content: space-evenly;
 
   .unit {
-    box-shadow: -2px -2px 10px #dadae4, 2px 2px 10px #2c2c2f;
+    box-shadow: 1px 1px 2px $clear-gray, -1px -1px 2px #fff;
     transition: all 0.2s ease-in-out;
     cursor: pointer;
     width: 52px;
@@ -23,7 +23,7 @@
     -webkit-appearance: none;
 
     &:hover {
-      box-shadow: -2px -2px 5px $regular-gray, 2px 2px 5px $color-shadow-dark;
+      box-shadow: inset 1px 1px 2px $clear-gray, inset -1px -1px 2px #fff;
     }
 
     &:active {
