@@ -25,13 +25,9 @@ const Esthetique = ({ title, subtext, text, textmobile, image, alt }) => {
               </div>
             </div>
           </div>
-          <span>
-            <div className={styles.box}>
-              <div className={`${styles.box} ${styles.__images} `}>
-                <img src={image} alt={alt} />
-              </div>
-            </div>
-          </span>
+          <div className={`${styles.box} ${styles.__images} `}>
+            <img src={image} alt={alt} />
+          </div>
         </div>
       </div>
     </div>
