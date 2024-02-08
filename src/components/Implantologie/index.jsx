@@ -1,7 +1,7 @@
 // Styles
 import styles from "./styles.module.scss";
 
-const Traitements = ({ title, subtext, text, textmobile }) => {
+const Traitements = ({ title, subtext, text, textmobile, image, alt }) => {
   return (
     <div className={styles.implantologie}>
       <div className={styles.__container}>
@@ -24,6 +24,13 @@ const Traitements = ({ title, subtext, text, textmobile }) => {
               </div>
             </div>
           </div>
+          <span>
+            <div className={styles.box}>
+              <div className={`${styles.box} ${styles.__images} `}>
+                <img src={image} alt={alt} />
+              </div>
+            </div>
+          </span>
         </div>
       </div>
     </div>

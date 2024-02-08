@@ -1,7 +1,8 @@
 // Styles
 import styles from "./styles.module.scss";
-
-const Esthetique = ({ title, subtext, text, textmobile }) => {
+// Images
+// import img from "../../assets/images/esthetique2.jpeg";
+const Esthetique = ({ title, subtext, text, textmobile, image, alt }) => {
   return (
     <div className={styles.esthetique}>
       <div className={styles.__container}>
@@ -24,6 +25,13 @@ const Esthetique = ({ title, subtext, text, textmobile }) => {
               </div>
             </div>
           </div>
+          <span>
+            <div className={styles.box}>
+              <div className={`${styles.box} ${styles.__images} `}>
+                <img src={image} alt={alt} />
+              </div>
+            </div>
+          </span>
         </div>
       </div>
     </div>
