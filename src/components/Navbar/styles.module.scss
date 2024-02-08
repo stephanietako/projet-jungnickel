@@ -9,6 +9,7 @@
   width: auto;
   height: 114px;
   justify-content: center;
+  padding: 0 1rem;
 
   &.fixed {
     background: $color-bg;
@@ -19,15 +20,18 @@
     z-index: 999;
     width: auto;
   }
-
-  .__logo {
+  .__logo_box {
     display: flex;
-    cursor: pointer;
-    z-index: 4;
-    padding: 5px;
-    width: 100%;
-    height: auto;
-    width: 5rem;
+    height: 100%;
+    width: auto;
+
+    .__logo {
+      cursor: pointer;
+      z-index: 4;
+      padding: 5px;
+      height: auto;
+      width: 7rem;
+    }
   }
 
   .__nav_menu {

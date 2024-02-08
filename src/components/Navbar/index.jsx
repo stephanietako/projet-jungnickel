@@ -3,7 +3,7 @@ import { v4 as uuidv4 } from "uuid";
 import Links from "../Links";
 // import IconContact from "../IconContact";
 // Assets
-import logo from "../../assets/logo/logo.svg";
+import logo from "../../assets/logo/testlogo.png";
 import menu from "../../assets/icon/menu.png";
 import cross from "../../assets/icon/cross.png";
 // Styles
@@ -56,9 +56,11 @@ const Navbar = () => {
       ref={navbarElement}
       className={fix ? `${styles.navbar} ${styles.fixed}` : `${styles.navbar}`}
     >
-      <a href="#welcome">
-        <img className={styles.__logo} src={logo} alt="logo test" />
-      </a>
+      <div className={styles.__logo_box}>
+        <a href="#welcome">
+          <img className={styles.__logo} src={logo} alt="logo test" />
+        </a>
+      </div>
       <div className={styles.__nav_menu}>
         <div className={styles.__menu_content}>
           {links.map((link) => (

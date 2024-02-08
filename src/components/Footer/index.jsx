@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 // Styles
 import styles from "./styles.module.scss";
 // Assets
-import logo from "../../assets/logo/logo.svg";
+import logo from "../../assets/logo/testlogo.png";
 
 const Footer = () => {
   const date = new Date();
@@ -20,6 +20,9 @@ const Footer = () => {
                 alt="B&B Italia Saint-Tropez"
               />
             </a>
+          </li>
+          <li>
+            <p>Docteur Ralph Jungnickel</p>
           </li>
           <li>
             <Link to="terms">Mentions légales</Link>
