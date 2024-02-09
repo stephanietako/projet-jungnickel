@@ -1,27 +1,33 @@
+@import "../../style/scss-variables";
+
 .section {
   display: flex;
   width: 100%;
   height: auto;
   border-radius: 22px;
-  border: 2px solid pink;
   justify-content: center;
 }
 
 .image {
   display: flex;
-  width: 65%;
+  width: auto;
   height: auto;
   align-self: center;
-  border-radius: 22px;
-  border: 2px solid blueviolet;
+  border: 2px solid $gray-color;
+  border-radius: 33px;
   opacity: 0;
-  transform: translateY(20px);
+  transform: translateY(40px);
+  img {
+    width: 25rem;
+    border-radius: 33px;
+    object-fit: cover;
+  }
 }
 
 @keyframes scrollIn {
   0% {
     opacity: 0;
-    transform: translateY(20px);
+    transform: translateY(40px);
   }
   100% {
     opacity: 1;
@@ -30,5 +36,5 @@
 }
 
 .slideIn {
-  animation: scrollIn 1s forwards;
+  animation: scrollIn 2s forwards;
 }
