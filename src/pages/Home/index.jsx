@@ -10,10 +10,10 @@ import LinesSection from "../../components/LinesSection";
 // Styles
 import styles from "./styles.module.scss";
 // Assets
-import image_1 from "../../assets/images/esthetique2.jpeg";
-import image_2 from "../../assets/images/esthetique2.jpeg";
-import image_3 from "../../assets/images/esthetique2.jpeg";
-import image_4 from "../../assets/images/esthetique2.jpeg";
+import image_1 from "../../assets/images/sainttropez.jpeg";
+import image_2 from "../../assets/images/implants1.jpeg";
+import image_3 from "../../assets/images/smillers.jpeg";
+import image_4 from "../../assets/images/soins.jpeg";
 import AnimImg from "../../components/AnimImg";
 
 const Home = () => {
@@ -97,7 +97,7 @@ const Home = () => {
           <Soins
             title={"Soins "}
             subtext={
-              "Notre cabinet dentaire est dévoué à offrir des soins dentaires de haute qualité dans un environnement chaleureux et accueillant. Nous comprenons que chaque patient est unique, c'est pourquoi nous nous efforçons de fournir des traitements personnalisés qui répondent à leurs besoins spécifiques. Que ce soit pour des soins de routine tels que le nettoyage et le détartrage, des procédures de restauration comme les obturations et les couronnes, ou des solutions avancées comme les implants dentaires et l'orthodontie, notre équipe expérimentée est là pour vous accompagner à chaque étape du processus. Nous sommes fiers d'utiliser les dernières technologies et techniques dentaires pour assurer des résultats durables et confortables. Pour notre cabinet, votre santé bucco-dentaire est notre priorité, et nous nous engageons à vous offrir des soins exceptionnels pour que vous puissiez retrouver et maintenir un sourire radieux et en santé."
+              "Notre cabinet dentaire est dévoué à offrir des soins dentaires de haute qualité dans un environnement chaleureux et accueillant. Nous comprenons que chaque patient est unique, c'est pourquoi nous nous efforçons de fournir des traitements personnalisés qui répondent à leurs besoins spécifiques. Que ce soit pour des soins de routine tels que le nettoyage et le détartrage, des procédures de restauration comme les obturations et les couronnes, ou des solutions avancées comme les implants dentaires et l'orthodontie, notre équipe expérimentée est là pour vous accompagner à chaque étape du processus. Nous sommes fiers d'utiliser les dernières technologies et techniques dentaires pour assurer des résultats durables et confortables. Pour notre cabinet, votre santé bucco-dentaire est notre priorité, et nous nous engageons à vous offrir des soins exceptionnels pour que vous puissiez retrouver et maintenir un sourire radieux et en santé. Nous avons proposons également des solutions à votre bien-être quotidien tel que le traitement du ronflement et de l'apnée du sommeil."
             }
             text={
               "Le traitement du ronflement et de l'apnée du sommeil avec une orthèse d'avancée mandibulaire (OAM) constitue une solution efficace pour améliorer la qualité du sommeil et la santé générale. Les orthèses d'avancée mandibulaire sont des dispositifs dentaires personnalisés qui fonctionnent en maintenant la mâchoire inférieure légèrement avancée pendant le sommeil, ce qui permet de maintenir les voies respiratoires ouvertes et de prévenir le ronflement ainsi que les épisodes d'apnée obstructive du sommeil. Notre cabinet collabore avec ResMed, leader dans le domaine des dispositifs médicaux pour le sommeil, pour offrir à nos patients des orthèses d'avancée mandibulaire de haute qualité. Les orthèses d'avancée mandibulaire de ResMed sont conçues avec précision pour assurer un ajustement confortable et une efficacité maximale, offrant ainsi aux patients une solution pratique et non invasive pour traiter le ronflement et l'apnée du sommeil. En combinant l'expertise dentaire de notre cabinet avec les innovations technologiques de ResMed, nous offrons des solutions de pointe pour améliorer la qualité du sommeil et favoriser le bien-être global de nos patients."

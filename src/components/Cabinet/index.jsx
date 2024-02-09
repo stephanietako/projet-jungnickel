@@ -12,7 +12,6 @@ const Cabinet = ({ title, subtext, text, textmobile, image, alt }) => {
               <span>
                 <p className={styles.__subtext}>{subtext}</p>
               </span>
-              <p>{text}</p>
             </div>
             <div className={styles.__bloc_txt_mobile}>
               <div className={styles.__text_mobile}>
@@ -20,7 +19,6 @@ const Cabinet = ({ title, subtext, text, textmobile, image, alt }) => {
                 <span>
                   <p className={styles.__subtext}>{subtext}</p>
                 </span>
-                <p>{textmobile}</p>
               </div>
             </div>
           </div>
