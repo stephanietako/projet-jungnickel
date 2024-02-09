@@ -2,7 +2,7 @@ import React, { useEffect, useRef, useState } from "react";
 // Styles
 import styles from "./styles.module.scss";
 
-const AnimImg = ({ images }) => {
+const ImageBox = ({ images }) => {
   const [isIntersecting, setIsIntersecting] = useState(false);
   const imgRef = useRef(null);
 
@@ -43,4 +43,4 @@ const AnimImg = ({ images }) => {
   );
 };
 
-export default AnimImg;
+export default ImageBox;

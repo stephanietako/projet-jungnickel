@@ -6,7 +6,7 @@ import Esthetique from "../../components/Esthetique";
 import Soins from "../../components/Soins";
 import Footer from "../../components/Footer";
 import LinesSection from "../../components/LinesSection";
-
+import ImageBox from "../../components/ImageBox";
 // Styles
 import styles from "./styles.module.scss";
 // Assets
@@ -14,7 +14,6 @@ import image_1 from "../../assets/images/sainttropez.jpeg";
 import image_2 from "../../assets/images/implants1.jpeg";
 import image_3 from "../../assets/images/smillers.jpeg";
 import image_4 from "../../assets/images/soins.jpeg";
-import AnimImg from "../../components/AnimImg";
 
 const Home = () => {
   const sections = [
@@ -43,7 +42,7 @@ const Home = () => {
             }
           />
 
-          <AnimImg images={image_1} />
+          <ImageBox images={image_1} />
         </div>
       ),
     },
@@ -65,7 +64,7 @@ const Home = () => {
             }
           />
 
-          <AnimImg images={image_2} />
+          <ImageBox images={image_2} />
         </div>
       ),
     },
@@ -86,7 +85,7 @@ const Home = () => {
             }
           />
 
-          <AnimImg images={image_3} />
+          <ImageBox images={image_3} />
         </div>
       ),
     },
@@ -107,7 +106,7 @@ const Home = () => {
             }
           />
 
-          <AnimImg images={image_4} />
+          <ImageBox images={image_4} />
         </div>
       ),
     },
