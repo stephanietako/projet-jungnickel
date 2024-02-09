@@ -39,6 +39,16 @@
         }
       }
     }
+
+    .__button_box {
+      display: flex;
+      width: 50%;
+      height: 100%;
+      border: 2px solid blue;
+      position: relative;
+      align-items: center;
+      align-content: end;
+    }
   }
 }
 

@@ -11,48 +11,48 @@
   padding: 4rem;
   border: 4px solid red;
 
-  section {
-    display: flex;
-    width: 100%;
-    height: auto;
-    border-radius: 22px;
-    border: 2px solid pink;
-    justify-content: center;
+  // section {
+  //   display: flex;
+  //   width: 100%;
+  //   height: auto;
+  //   border-radius: 22px;
+  //   border: 2px solid pink;
+  //   justify-content: center;
 
-    .image {
-      display: flex;
-      width: 65%;
-      height: auto;
-      align-self: center;
-      border-radius: 22px;
-      border: 2px solid blueviolet;
+  //   .image {
+  //     display: flex;
+  //     width: 65%;
+  //     height: auto;
+  //     align-self: center;
+  //     border-radius: 22px;
+  //     border: 2px solid blueviolet;
 
-      img {
-        display: block;
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-        border-radius: 22px;
-      }
-    }
+  //     img {
+  //       display: block;
+  //       width: 100%;
+  //       height: 100%;
+  //       object-fit: cover;
+  //       border-radius: 22px;
+  //     }
+  //   }
 
-    &.scrolled {
-      opacity: 0;
-      transform: translateY(20px);
-      animation: scrollIn 3s forwards;
-    }
+  //   &.scrolled {
+  //     opacity: 0;
+  //     transform: translateY(20px);
+  //     animation: scrollIn 3s forwards;
+  //   }
 
-    @keyframes scrollIn {
-      0% {
-        opacity: 0;
-        transform: translateY(20px);
-      }
-      100% {
-        opacity: 1;
-        transform: translateY(0);
-      }
-    }
-  }
+  //   @keyframes scrollIn {
+  //     0% {
+  //       opacity: 0;
+  //       transform: translateY(20px);
+  //     }
+  //     100% {
+  //       opacity: 1;
+  //       transform: translateY(0);
+  //     }
+  //   }
+  // }
 }
 //////////////////RESPONSIVE//////////////////////
 @media only screen and (max-width: 1600px) {
