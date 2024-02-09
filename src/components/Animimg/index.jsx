@@ -20,20 +20,23 @@ const AnimImg = ({ images }) => {
   }, [isIntersecting]);
 
   useEffect(() => {
-    if (isIntersecting) {
-      imgRef.current.querySelectorAll("div").forEach((el) => {
-        el.classList.add("slide-in");
-      });
-    } else {
-      imgRef.current.querySelectorAll("div").forEach((el) => {
-        el.classList.remove("slide-in");
-      });
-    }
-  }, [isIntersecting]);
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        setIsIntersecting(entry.isIntersecting);
+      },
+      { rootMargin: "-300px" }
+    );
+
+    observer.observe(imgRef.current);
+
+    return () => observer.disconnect();
+  }, []);
 
   return (
-    <section ref={imgRef}>
-      <div className={styles.image}>
+    <section ref={imgRef} className={isIntersecting ? styles.section : ""}>
+      <div
+        className={`${styles.image} ${isIntersecting ? styles.slideIn : ""}`}
+      >
         <img src={images} alt="esthetique" />
       </div>
     </section>
