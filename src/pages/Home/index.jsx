@@ -1,3 +1,5 @@
+import React, { useEffect, useRef } from "react";
+
 import Navbar from "../../components/Navbar";
 import HeroSection from "../../components/HeroSection";
 import Cabinet from "../../components/Cabinet";
@@ -6,33 +8,36 @@ import Esthetique from "../../components/Esthetique";
 import Soins from "../../components/Soins";
 import Footer from "../../components/Footer";
 import LinesSection from "../../components/LinesSection";
-import { motion, useAnimation } from "framer-motion";
+
 // Styles
 import styles from "./styles.module.scss";
 import image_1 from "../../assets/images/esthetique2.jpeg";
 import image_2 from "../../assets/images/esthetique2.jpeg";
 import image_3 from "../../assets/images/esthetique2.jpeg";
 import image_4 from "../../assets/images/esthetique2.jpeg";
-const Home = () => {
-  const variant = {
-    visible: { scale: 1 },
-    hidden: { scale: 0 },
-  };
 
-  const images = [
-    {
-      image: image_1,
-    },
-    {
-      image: image_2,
-    },
-    {
-      image: image_3,
-    },
-    {
-      image: image_4,
-    },
-  ];
+const Home = () => {
+  const imgRef = useRef(null);
+
+  useEffect(() => {
+    const observer = new IntersectionObserver((entries, observer) => {
+      entries
+        .filter((e) => e.isIntersecting)
+        .forEach((entry) => {
+          entry.target.classList.add("scrolled");
+          observer.unobserve(entry.target);
+        });
+    });
+
+    document.querySelectorAll("section").forEach((e) => {
+      observer.observe(e);
+    });
+
+    // Nettoyer l'observateur lorsque le composant est démonté
+    return () => {
+      observer.disconnect();
+    };
+  }, []);
 
   const sections = [
     {
@@ -58,9 +63,12 @@ const Home = () => {
             textmobile={
               "Provident similique accusantium nemo autem. Veritatis obcaecati tenetur iure eius earum ut molestias architecto voluptate aliquam"
             }
-            image={image_1}
-            alt="esthetique"
           />
+          <section>
+            <div ref={imgRef} className={styles.image}>
+              <img src={image_1} alt="esthetique" />
+            </div>
+          </section>
         </div>
       ),
     },
@@ -80,9 +88,12 @@ const Home = () => {
             textmobile={
               "Les implants de la marque Straumann sont réputés pour leur qualité et leur fiabilité dans le domaine de l'implantologie dentaire. Fabriqués avec des matériaux de haute qualité et conçus avec une précision suisse, les implants Straumann offrent une solution durable et efficace pour remplacer les dents manquantes. Leur conception innovante garantit une intégration osseuse optimale, assurant ainsi une stabilité à long terme. De plus, la large gamme de produits proposée par Straumann permet de répondre aux besoins spécifiques de chaque patient, offrant ainsi des solutions personnalisées pour restaurer la fonctionnalité et l'esthétique dentaire. Avec leur histoire de qualité et d'excellence, les implants Straumann sont un choix de confiance pour les professionnels de la dentisterie et les patients du monde entier."
             }
-            image={image_2}
-            alt="esthetique"
           />
+          <section>
+            <div ref={imgRef} className={styles.image}>
+              <img src={image_2} alt="esthetique" />
+            </div>
+          </section>
         </div>
       ),
     },
@@ -101,9 +112,12 @@ const Home = () => {
             textmobile={
               "L'orthodontie avec les aligneurs de la marque Smilers offre une approche moderne et discrète pour corriger les problèmes d'alignement dentaire. Conçus sur mesure pour chaque patient, les aligneurs Smilers sont fabriqués à partir de matériaux transparents et confortables, ce qui les rend pratiquement invisibles lorsqu'ils sont portés. Grâce à leur conception sur mesure et à leur technologie avancée, les aligneurs Smilers permettent de déplacer progressivement les dents vers leur position désirée, offrant ainsi des résultats précis et esthétiques. De plus, leur conception amovible permet aux patients de maintenir une bonne hygiène bucco-dentaire tout au long du traitement. Avec les aligneurs Smilers, obtenir un sourire droit et uniforme est désormais plus pratique et discret que jamais."
             }
-            image={image_3}
-            alt="esthetique"
           />
+          <section>
+            <div ref={imgRef} className={styles.image}>
+              <img src={image_3} alt="esthetique" />
+            </div>
+          </section>
         </div>
       ),
     },
@@ -122,9 +136,15 @@ const Home = () => {
             textmobile={
               "Le traitement du ronflement et de l'apnée du sommeil avec une orthèse d'avancée mandibulaire (OAM) constitue une solution efficace pour améliorer la qualité du sommeil et la santé générale. Les orthèses d'avancée mandibulaire sont des dispositifs dentaires personnalisés qui fonctionnent en maintenant la mâchoire inférieure légèrement avancée pendant le sommeil, ce qui permet de maintenir les voies respiratoires ouvertes et de prévenir le ronflement ainsi que les épisodes d'apnée obstructive du sommeil. Notre cabinet collabore avec ResMed, leader dans le domaine des dispositifs médicaux pour le sommeil, pour offrir à nos patients des orthèses d'avancée mandibulaire de haute qualité. Les orthèses d'avancée mandibulaire de ResMed sont conçues avec précision pour assurer un ajustement confortable et une efficacité maximale, offrant ainsi aux patients une solution pratique et non invasive pour traiter le ronflement et l'apnée du sommeil. En combinant l'expertise dentaire de notre cabinet avec les innovations technologiques de ResMed, nous offrons des solutions de pointe pour améliorer la qualité du sommeil et favoriser le bien-être global de nos patients."
             }
-            image={image_4}
-            alt="esthetique"
+            // image={image_4}
+            // alt="esthetique"
           />
+
+          <section>
+            <div ref={imgRef} className={styles.image}>
+              <img src={image_4} alt="esthetique" />
+            </div>
+          </section>
         </div>
       ),
     },

@@ -24,9 +24,9 @@ const Cabinet = ({ title, subtext, text, textmobile, image, alt }) => {
               </div>
             </div>
           </div>
-          <div className={`${styles.box} ${styles.__images} `}>
+          {/* <div className={`${styles.box} ${styles.__images} `}>
             <img src={image} alt={alt} />
-          </div>
+          </div> */}
         </div>
       </div>
     </div>
