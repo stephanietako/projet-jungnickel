@@ -1,11 +1,8 @@
 import React, { useState } from "react";
-// Assets
-// import mail from "../../assets/icon/at-clear.png";
 import mail from "../../assets/icon/at.svg";
 import mailHovered from "../../assets/icon/at-colored.svg";
 import phone from "../../assets/icon/phone.svg";
 import phoneHovered from "../../assets/icon/phone-colored.svg";
-// Styles
 import styles from "./styles.module.scss";
 
 const IconContact = () => {
@@ -22,7 +19,6 @@ const IconContact = () => {
           onMouseEnter={() => setIsMailHovered(true)}
           onMouseLeave={() => setIsMailHovered(false)}
         >
-          {" "}
           <img
             className={styles.icon}
             src={isMailHovered ? mailHovered : mail}
@@ -30,22 +26,21 @@ const IconContact = () => {
           />
         </button>
       </a>
-      {/* //////// */}
-      <a href={isPhoneHovered}>
-        <button
-          type="button"
-          className={styles.unit}
-          onMouseEnter={() => setIsPhoneHovered(true)}
-          onMouseLeave={() => setIsPhoneHovered(false)}
-        >
-          {" "}
+
+      <button
+        type="button"
+        className={styles.unit}
+        onMouseEnter={() => setIsPhoneHovered(true)}
+        onMouseLeave={() => setIsPhoneHovered(false)}
+      >
+        <a href={isPhoneHovered ? "tel:0494972756" : ""}>
           <img
             className={styles.icon}
             src={isPhoneHovered ? phoneHovered : phone}
             alt="icon phone"
           />
-        </button>
-      </a>
+        </a>
+      </button>
     </div>
   );
 };

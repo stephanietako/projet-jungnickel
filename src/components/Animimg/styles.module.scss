@@ -13,7 +13,9 @@ section {
     align-self: center;
     border-radius: 22px;
     border: 2px solid blueviolet;
-
+    opacity: 0;
+    transform: translateY(20px);
+    animation: scrollIn 3s forwards;
     img {
       display: block;
       width: 100%;
@@ -21,12 +23,6 @@ section {
       object-fit: cover;
       border-radius: 22px;
     }
-  }
-
-  &.scrolled {
-    opacity: 0;
-    transform: translateY(20px);
-    animation: scrollIn 3s forwards;
   }
 
   @keyframes scrollIn {
@@ -38,5 +34,9 @@ section {
       opacity: 1;
       transform: translateY(0);
     }
+  }
+  .slide-in {
+    transform: translateX(0) !important;
+    opacity: 1 !important;
   }
 }

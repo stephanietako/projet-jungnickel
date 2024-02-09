@@ -1,5 +1,3 @@
-import React, { useEffect, useRef, useState } from "react";
-
 import Navbar from "../../components/Navbar";
 import HeroSection from "../../components/HeroSection";
 import Cabinet from "../../components/Cabinet";
@@ -16,39 +14,9 @@ import image_1 from "../../assets/images/esthetique2.jpeg";
 import image_2 from "../../assets/images/esthetique2.jpeg";
 import image_3 from "../../assets/images/esthetique2.jpeg";
 import image_4 from "../../assets/images/esthetique2.jpeg";
-import AnimImg from "../../components/Animimg";
+import AnimImg from "../../components/AnimImg";
 
 const Home = () => {
-  const [isIntersecting, setIsIntersecting] = useState(false);
-  const imgRef = useRef(null);
-
-  // useEffect(() => {
-  //   const observer = new IntersectionObserver((entries, observer) => {
-  //     entries
-  //       .filter((e) => e.isIntersecting)
-  //       .forEach((entry) => {
-  //         entry.target.classList.add("scrolled");
-  //         observer.unobserve(entry.target);
-  //       });
-  //   });
-
-  //   document.querySelectorAll("section").forEach((e) => {
-  //     observer.observe(e);
-  //   });
-
-  //   return () => {
-  //     observer.disconnect();
-  //   };
-  // }, []);
-  useEffect(() => {
-    const observer = new IntersectionObserver(([entry]) => {
-      setIsIntersecting(entry.isIntersecting);
-    });
-    console.log(isIntersecting);
-    observer.observe(imgRef.current);
-    return () => observer.disconnect();
-  }, []);
-
   const sections = [
     {
       id: "welcome",
@@ -61,7 +29,7 @@ const Home = () => {
     {
       id: "cabinet",
       content: (
-        <div className={styles.sections} id="cabinet" ref={imgRef}>
+        <div className={styles.sections} id="cabinet">
           <Cabinet
             title={"Le Cabinet"}
             subtext={
@@ -74,11 +42,7 @@ const Home = () => {
               "Provident similique accusantium nemo autem. Veritatis obcaecati tenetur iure eius earum ut molestias architecto voluptate aliquam"
             }
           />
-          {/* <section>
-            <div className={styles.image}>
-              <img src={image_1} alt="esthetique" />
-            </div>
-          </section> */}
+
           <AnimImg images={image_1} />
         </div>
       ),
@@ -87,7 +51,7 @@ const Home = () => {
     {
       id: "implantologie",
       content: (
-        <div className={styles.sections} id="implantologie" ref={imgRef}>
+        <div className={styles.sections} id="implantologie">
           <Implantologie
             title={"Implantologie"}
             subtext={
@@ -100,11 +64,7 @@ const Home = () => {
               "Les implants de la marque Straumann sont réputés pour leur qualité et leur fiabilité dans le domaine de l'implantologie dentaire. Fabriqués avec des matériaux de haute qualité et conçus avec une précision suisse, les implants Straumann offrent une solution durable et efficace pour remplacer les dents manquantes. Leur conception innovante garantit une intégration osseuse optimale, assurant ainsi une stabilité à long terme. De plus, la large gamme de produits proposée par Straumann permet de répondre aux besoins spécifiques de chaque patient, offrant ainsi des solutions personnalisées pour restaurer la fonctionnalité et l'esthétique dentaire. Avec leur histoire de qualité et d'excellence, les implants Straumann sont un choix de confiance pour les professionnels de la dentisterie et les patients du monde entier."
             }
           />
-          {/* <section>
-            <div className={styles.image}>
-              <img src={image_2} alt="esthetique" />
-            </div>
-          </section> */}
+
           <AnimImg images={image_2} />
         </div>
       ),
@@ -112,7 +72,7 @@ const Home = () => {
     {
       id: "esthetique",
       content: (
-        <div className={styles.sections} id="esthetique" ref={imgRef}>
+        <div className={styles.sections} id="esthetique">
           <Esthetique
             title={"Esthetique "}
             subtext={
@@ -125,11 +85,7 @@ const Home = () => {
               "L'orthodontie avec les aligneurs de la marque Smilers offre une approche moderne et discrète pour corriger les problèmes d'alignement dentaire. Conçus sur mesure pour chaque patient, les aligneurs Smilers sont fabriqués à partir de matériaux transparents et confortables, ce qui les rend pratiquement invisibles lorsqu'ils sont portés. Grâce à leur conception sur mesure et à leur technologie avancée, les aligneurs Smilers permettent de déplacer progressivement les dents vers leur position désirée, offrant ainsi des résultats précis et esthétiques. De plus, leur conception amovible permet aux patients de maintenir une bonne hygiène bucco-dentaire tout au long du traitement. Avec les aligneurs Smilers, obtenir un sourire droit et uniforme est désormais plus pratique et discret que jamais."
             }
           />
-          {/* <section>
-            <div className={styles.image}>
-              <img src={image_3} alt="esthetique" />
-            </div>
-          </section> */}
+
           <AnimImg images={image_3} />
         </div>
       ),
@@ -137,7 +93,7 @@ const Home = () => {
     {
       id: "soins",
       content: (
-        <div className={styles.sections} id="soins" ref={imgRef}>
+        <div className={styles.sections} id="soins">
           <Soins
             title={"Soins "}
             subtext={
@@ -151,11 +107,6 @@ const Home = () => {
             }
           />
 
-          {/* <section>
-            <div className={styles.image}>
-              <img src={image_4} alt="esthetique" />
-            </div>
-          </section> */}
           <AnimImg images={image_4} />
         </div>
       ),
