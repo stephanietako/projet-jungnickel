@@ -38,9 +38,9 @@ const HeroSection = () => {
               <a href="mailto:dr.jungnickel@free.fr">dr.jungnickel@free.fr</a>
             </p>
           </span>
-        </div>
-        <div className={styles.__button_box}>
-          <Button link={linkToAbout} />
+          <div className={styles.__button_box}>
+            <Button link={linkToAbout} />
+          </div>
         </div>
       </div>
     </div>
