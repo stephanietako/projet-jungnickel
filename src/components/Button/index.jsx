@@ -10,7 +10,7 @@ const Button = ({ text, link }) => {
   const { name, target } = link;
 
   return (
-    <div className={styles.container}>
+    <div className={styles.btn__container}>
       <a
         href={target}
         className={styles.__btn}

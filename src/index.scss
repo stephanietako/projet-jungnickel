@@ -19,29 +19,37 @@ body {
 a {
   text-decoration: none;
   list-style-type: none;
-  color: #61677c;
+  color: #24262e;
+  //color: #f7f8fc;
   cursor: pointer;
 }
 
 h1 {
-  font-size: 31px;
+  font-size: 4rem;
   color: $color-clear-dark;
+  //color: #f7f8fc;
 }
 
 h2 {
-  line-height: 30px;
+  line-height: 1.5;
   white-space: pre-wrap;
-  font-size: 24px;
+
   color: $color-clear-dark;
+  font-size: 3rem;
+  //color: #f7f8fc;
 }
 
 h3 {
+  line-height: 1.5;
   color: $color-clear-dark;
+  font-size: 2rem;
+  //color: #f7f8fc;
 }
 
 p {
-  line-height: 25px;
+  line-height: 1.5;
   white-space: pre-wrap;
-  font-size: 16px;
-  color: $regular-gray;
+  font-size: 1.5rem;
+  //color: #f7f8fc;
+  color: $color-clear-dark;
 }

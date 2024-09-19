@@ -1,75 +1,133 @@
 @import "../../style/scss-variables";
 
-.footer {
+.footer__container {
   display: flex;
-  bottom: 0;
-  width: 100%;
-  height: 100%;
-  border-top: 1px solid $color-clear-dark;
-  background: $bg-linear-gradt;
-
-  .__container {
-    display: flex;
-    align-items: center;
-    bottom: 0;
-    width: auto;
-    color: $color-clear-dark;
+  height: 25vh;
+  clip-path: polygon(0% 0, 100% 0%, 100% 100%, 0 100%);
+  //border: 3px solid rgb(244, 9, 9);
+  // width:auto;
+  .footer__bloc {
     height: auto;
-    width: 70%;
-    flex-wrap: wrap;
+    width: 100vw;
     justify-content: center;
-    padding: 1rem;
+    display: flex;
+    bottom: 0;
+    padding: 3rem;
+    height: 70%;
+    //border: 4px solid red;
 
-    .__logo {
-      width: 8rem;
-      height: auto;
-    }
-
-    .__copyright {
+    .footer_infos {
       display: flex;
-      flex-wrap: wrap;
-      color: $mouth-gray;
-      font-size: 14px;
       width: 100%;
-    }
-
-    ul {
-      display: flex;
-      align-items: center;
-      text-decoration: none;
-      list-style-type: none;
+      //height: 20vh;
       height: auto;
-      width: auto;
+      bottom: 0;
+      background-color: #fff;
+      //border: 5px solid green;
+      justify-content: center;
+      flex-direction: column;
+      //pour desk position: fixed
+      position: fixed;
 
-      li {
-        padding: 8px;
-        font-size: small;
+      .footer_infos__container {
+        display: flex;
+        width: 100%;
+        height: auto;
+        background-color: aliceblue;
+        //border: 4px solid greenyellow;
+        justify-content: center;
 
-        a {
-          &:hover {
-            color: #fff;
+        .column {
+          width: auto;
+          height: 100%;
+          display: flex;
+          flex-direction: column;
+          position: relative;
+          padding: 2rem;
+
+          .column__title {
+            display: flex;
+            width: auto;
+            height: auto;
+            //justify-content: center;
+            h3 {
+              margin-bottom: 2rem;
+            }
+          }
+
+          ul {
+            list-style-type: none;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            //border: 2px solid black;
+
+            .__info {
+              display: flex;
+              width: 100%;
+              height: 1rem;
+              align-items: center;
+              cursor: pointer;
+              //border: 2px solid black;
+
+              a {
+                display: flex;
+                //border: 2px solid red;
+                width: auto;
+                height: auto;
+                &:hover {
+                  text-decoration: underline;
+                  color: gray;
+                }
+              }
+
+              .__img {
+                display: flex;
+                width: 100%;
+                height: 100%;
+                justify-content: center;
+
+                .__icon {
+                  object-fit: contain;
+                }
+              }
+
+              .__txt {
+                display: flex;
+                align-items: center;
+
+                p {
+                  font-size: 0.7rem;
+                }
+              }
+            }
+
+            .__info_adress_bloc {
+              display: flex;
+              width: 100%;
+              height: 3rem;
+              border: none;
+            }
           }
         }
       }
-    }
-  }
-  span {
-    display: flex;
-    width: 50%;
-    height: auto;
-    padding: 3rem;
-  }
-}
-//////////////////////// RESPONSIVE ///////////////////////////////
-@media only screen and (max-width: 768px) {
-  .footer {
-    .__container {
-      width: 100%;
-      justify-content: start;
-    }
-    span {
-      width: 100%;
-      padding: 0.5rem;
+
+      .__copyright {
+        display: flex;
+        flex-wrap: wrap;
+        color: #000;
+        font-size: 10px;
+        width: 100%;
+        align-items: center;
+        position: absolute;
+        //height: 3rem;
+        justify-content: center;
+        //background-color: white;
+        bottom: 0;
+        position: relative;
+        //border: "2px solid red";
+      }
     }
   }
 }

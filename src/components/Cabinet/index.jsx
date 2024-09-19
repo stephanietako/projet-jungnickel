@@ -1,30 +1,15 @@
-// Styles
-import styles from "./styles.module.scss";
+import SectionComponent from "../SectionComponent/SectionComponent";
 
 const Cabinet = ({ title, subtext, text, textmobile, image, alt }) => {
   return (
-    <div className={styles.cabinet}>
-      <div className={styles.__container}>
-        <div className={styles.__cabinet_content}>
-          <div className={`${styles.box} ${styles.__text} `}>
-            <div className={styles.__regular_text}>
-              <h1> {title}</h1>
-              <span>
-                <p className={styles.__subtext}>{subtext}</p>
-              </span>
-            </div>
-            <div className={styles.__bloc_txt_mobile}>
-              <div className={styles.__text_mobile}>
-                <h1>{title}</h1>
-                <span>
-                  <p className={styles.__subtext}>{subtext}</p>
-                </span>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
+    <SectionComponent
+      title={title}
+      subtext={subtext}
+      text={text}
+      textmobile={textmobile}
+      image={image}
+      alt={alt}
+    />
   );
 };
 

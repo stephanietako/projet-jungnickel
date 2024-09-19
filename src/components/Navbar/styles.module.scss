@@ -1,7 +1,7 @@
 @import "../../style/scss-variables";
 
 .navbar {
-  background: $color-bg;
+  //background: $color-bg;
   display: flex;
   position: sticky;
   top: 0;
@@ -12,7 +12,7 @@
   padding: 0 1rem;
 
   &.fixed {
-    background: $color-bg;
+    background: #fff;
     transition: 2s ease-in-out;
     -webkit-transition: 2s ease-in-out;
     -moz-transition: 2s ease-in-out;
