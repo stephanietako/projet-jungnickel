@@ -37,10 +37,10 @@ const Home = () => {
               "Bienvenue au cabinet dentaire du Dr. Jungnickel et de son épouse Nathalie, au cœur de Saint-Tropez. Notre équipe vous accueille chaleureusement pour une expérience dentaire exceptionnelle."
             }
             subtext={
-              "Passionnés par notre métier, nous offrons des soins dentaires de haute qualité avec minutie et attention aux détails."
+              "Passionnés par notre métier, nous offrons des soins dentaires de haute qualité avec minutie et attention aux détails. Grâce à des équipements de pointe comme la radiographie 3D, nous diagnostiquons et planifions des traitements adaptés à vos besoins. Que ce soit pour une consultation ou des traitements complexes, comptez sur notre expertise et notre dévouement à votre santé bucco-dentaire"
             }
             textmobile={
-              "Passionnés par notre métier, nous offrons des soins dentaires de haute qualité avec minutie et attention aux détails."
+              "Passionnés par notre métier, nous offrons des soins dentaires de haute qualité avec minutie et attention aux détails. Grâce à des équipements de pointe comme la radiographie 3D, nous diagnostiquons et planifions des traitements adaptés à vos besoins. Que ce soit pour une consultation ou des traitements complexes, comptez sur notre expertise et notre dévouement à votre santé bucco-dentaire"
             }
             image={image_1}
             alt="Vue sur le village de Saint-Tropez"
@@ -58,10 +58,10 @@ const Home = () => {
               "Les implants dentaires remplacent les dents manquantes, améliorant la santé bucco-dentaire et la qualité de vie."
             }
             subtext={
-              "Les implants Straumann sont reconnus pour leur qualité et fiabilité."
+              "Les implants Straumann sont reconnus pour leur qualité et fiabilité. Fabriqués avec précision suisse et des matériaux de haute qualité, ils garantissent une intégration osseuse optimale et une stabilité à long terme. Straumann propose une large gamme de produits personnalisés pour restaurer fonctionnalité et esthétique dentaire, faisant de leurs implants un choix de confiance pour les professionnels et patients dans le monde entier."
             }
             textmobile={
-              "Les implants Straumann sont reconnus pour leur qualité et fiabilité."
+              "Les implants Straumann sont reconnus pour leur qualité et fiabilité. Fabriqués avec précision suisse et des matériaux de haute qualité, ils garantissent une intégration osseuse optimale et une stabilité à long terme. Straumann propose une large gamme de produits personnalisés pour restaurer fonctionnalité et esthétique dentaire, faisant de leurs implants un choix de confiance pour les professionnels et patients dans le monde entier."
             }
             image={image_2}
             alt="Image d'implantologie"
@@ -76,13 +76,13 @@ const Home = () => {
           <Esthetique
             title={"Esthetique"}
             text={
-              "Les soins esthétiques dentaires améliorent l'apparence et la confiance en soi."
+              "Les soins esthétiques dentaires améliorent l'apparence et la confiance en soi. Notre équipe propose des traitements personnalisés, incluant le blanchiment des dents, les facettes, les couronnes en céramique et les aligneurs transparents, pour créer des sourires éclatants et harmonieux. Un sourire radieux est essentiel. Nous offrons des soins de haute qualité pour vous aider à atteindre le sourire de vos rêves."
             }
             subtext={
-              "Le traitement du ronflement et de l'apnée du sommeil avec une orthèse d'avancée mandibulaire."
+              "Les aligneurs Smilers offrent une approche moderne et discrète pour corriger l'alignement dentaire. Transparente et confortable, cette solution sur mesure permet de déplacer progressivement les dents avec des résultats précis et esthétiques. Leur conception amovible facilite le maintien d'une bonne hygiène bucco-dentaire. Obtenez un sourire droit et uniforme de manière pratique et discrète avec les aligneurs Smilers."
             }
             textmobile={
-              "Le traitement du ronflement et de l'apnée du sommeil avec une orthèse d'avancée mandibulaire."
+              "Les aligneurs Smilers offrent une approche moderne et discrète pour corriger l'alignement dentaire. Transparente et confortable, cette solution sur mesure permet de déplacer progressivement les dents avec des résultats précis et esthétiques. Leur conception amovible facilite le maintien d'une bonne hygiène bucco-dentaire. Obtenez un sourire droit et uniforme de manière pratique et discrète avec les aligneurs Smilers."
             }
             image={image_3}
             alt="Image esthétique"
@@ -97,13 +97,13 @@ const Home = () => {
           <Soins
             title={"Soins"}
             text={
-              "Notre cabinet dentaire offre des soins de haute qualité dans un environnement chaleureux."
+              "Notre cabinet dentaire offre des soins de haute qualité dans un environnement chaleureux. Nous proposons des traitements personnalisés pour chaque patient, incluant soins de routine, restaurations, implants dentaires et orthodontie. Notre équipe utilise les dernières technologies pour des résultats durables et confortables. La santé bucco-dentaire de nos patients est notre priorité."
             }
             subtext={
-              "Le traitement du ronflement et de l'apnée du sommeil avec une orthèse d'avancée mandibulaire."
+              "Nous traitons également le ronflement et l'apnée du sommeil avec des orthèses d'avancée mandibulaire (OAM). Ces dispositifs dentaires, en partenariat avec ResMed, maintiennent la mâchoire avancée pour garder les voies respiratoires ouvertes, améliorant ainsi le sommeil et le bien-être général de nos patients."
             }
             textmobile={
-              "Le traitement du ronflement et de l'apnée du sommeil avec une orthèse d'avancée mandibulaire."
+              "Nous traitons également le ronflement et l'apnée du sommeil avec des orthèses d'avancée mandibulaire (OAM). Ces dispositifs dentaires, en partenariat avec ResMed, maintiennent la mâchoire avancée pour garder les voies respiratoires ouvertes, améliorant ainsi le sommeil et le bien-être général de nos patients."
             }
             image={image_4}
             alt="Image des soins"
