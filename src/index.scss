@@ -1,55 +1,22 @@
-@import "./style/fonts.scss";
-@import "./style/scss-variables";
-
+// @import "./style/fonts.scss";
+// @import "./style/scss-variables";
 body {
   display: flex;
   flex-direction: column;
   position: relative;
   margin: 0;
   padding: 0;
+  width: 100%;
   min-height: 100vh;
   line-height: 1;
   font-family: "Baumans", system-ui;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   font-weight: 400;
-  color: $color-clear-dark;
+  //overflow-x: hidden; /* Prevent horizontal scrolling */
 }
 
 a {
   text-decoration: none;
   list-style-type: none;
-  color: #24262e;
-  //color: #f7f8fc;
-  cursor: pointer;
-}
-
-h1 {
-  font-size: 4rem;
-  color: $color-clear-dark;
-  //color: #f7f8fc;
-}
-
-h2 {
-  line-height: 1.5;
-  white-space: pre-wrap;
-
-  color: $color-clear-dark;
-  font-size: 3rem;
-  //color: #f7f8fc;
-}
-
-h3 {
-  line-height: 1.5;
-  color: $color-clear-dark;
-  font-size: 2rem;
-  //color: #f7f8fc;
-}
-
-p {
-  line-height: 1.5;
-  white-space: pre-wrap;
-  font-size: 1.5rem;
-  //color: #f7f8fc;
-  color: $color-clear-dark;
 }

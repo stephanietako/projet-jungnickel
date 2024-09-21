@@ -33,13 +33,13 @@ const ImageBox = ({ images }) => {
   }, []);
 
   return (
-    <section ref={imgRef} className={isIntersecting ? styles.section : ""}>
+    <div ref={imgRef} className={isIntersecting ? styles.imgbox : ""}>
       <div
         className={`${styles.image} ${isIntersecting ? styles.slideIn : ""}`}
       >
-        <img src={images} alt="esthetique" />
+        <img src={images} alt="illustrations des services dentaires proposés" />
       </div>
-    </section>
+    </div>
   );
 };
 

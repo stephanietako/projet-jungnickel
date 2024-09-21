@@ -6,5 +6,37 @@
 
 html {
   scroll-behavior: smooth;
-  scroll-padding-top: var(--scroll-padding, 117px);
+  scroll-padding-top: var(--scroll-padding, 114px);
+}
+
+a {
+  text-decoration: none;
+  list-style-type: none;
+  color: #24262e;
+  cursor: pointer;
+}
+
+h1 {
+  font-size: 4rem;
+  color: #24262e;
+}
+
+h2 {
+  line-height: 1.5;
+  white-space: pre-wrap;
+  color: #24262e;
+  font-size: 3rem;
+}
+
+h3 {
+  line-height: 1.5;
+  color: #24262e;
+  font-size: 2rem;
+}
+
+p {
+  line-height: 1.5;
+  white-space: pre-wrap;
+  font-size: 1rem;
+  color: #24262e;
 }

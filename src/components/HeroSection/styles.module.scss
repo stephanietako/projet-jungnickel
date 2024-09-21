@@ -5,11 +5,12 @@
   width: 100%;
   height: auto;
   justify-content: center;
+  //position: sticky;
 
-  .__container {
+  .hero__container {
     display: flex;
     height: 90vh;
-    width: 100vw;
+    width: 100%;
     justify-content: center;
     /* margin-top: 2rem; */
     /* background-color: rgb(243, 9, 188); */
@@ -17,16 +18,24 @@
     align-content: flex-end;
     /* align-items: flex-end; */
     /* position: relative; */
-    border: 4px solid yellow;
+    //border: 4px solid yellow;
 
-    .__img {
+    .hero__img {
+      //background-color: blue;
+      // background-image: linear-gradient(
+      //     rgba(1, 7, 28, 0.5),
+      //     hsla(209, 89%, 46%, 0.577)
+      //   ),
+      //   url("../../assets/images/implants.jpeg");
+      // filter: invert(87%) sepia(33%) saturate(274%) hue-rotate(178deg)
+      //   brightness(41%) contrast(100%);
       background-image: linear-gradient(
           rgba(1, 7, 28, 0.5),
-          hsla(209, 89%, 46%, 0.577)
+          hsl(209deg 93.08% 49.18% / 87%)
         ),
         url("../../assets/images/implants.jpeg");
-      filter: invert(87%) sepia(33%) saturate(274%) hue-rotate(178deg)
-        brightness(41%) contrast(100%);
+      filter: invert(87%) sepia(81%) saturate(151%) hue-rotate(179deg)
+        brightness(100%) contrast(81%);
       width: 100%;
       height: 100%;
       background-position: 0 7%;
@@ -35,7 +44,7 @@
       position: relative;
     }
 
-    .__bloc_txt {
+    .hero__bloc_txt {
       text-align: center;
       position: absolute;
       top: 50%;
@@ -45,22 +54,27 @@
       height: 100%;
       //border: 4px solid rgb(247, 0, 255);
       align-content: center;
-      .__title {
+      .hero__title {
         h1 {
           color: #f7f8fc;
         }
       }
-      .__subtitle {
+      .hero__subtitle {
         h2,
         h3 {
           color: #f7f8fc;
         }
       }
-      .__text {
-        p,
-        a {
+      .hero__text {
+        p {
           color: #f7f8fc;
         }
+      }
+    }
+    a {
+      color: #f7f8fc;
+      &:hover {
+        color: gray;
       }
     }
 

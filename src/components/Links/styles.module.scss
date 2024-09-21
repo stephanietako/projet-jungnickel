@@ -5,7 +5,7 @@
   align-items: center;
   width: 12%;
   border-radius: 9px;
-  height: 1rem;
+  height: auto;
   margin-left: 3rem;
   margin-right: 3rem;
   box-shadow: 1px 1px 2px $clear-gray, -1px -1px 2px #fff;
@@ -41,7 +41,7 @@
       -webkit-transition: opacity 0.2s ease-out;
       -moz-transition: opacity 0.2s ease-out;
       -o-transition: opacity 0.2s ease-out;
-      color: #000080;
+      color: gray;
     }
   }
 }

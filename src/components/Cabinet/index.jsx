@@ -1,4 +1,4 @@
-import SectionComponent from "../SectionComponent/SectionComponent";
+import SectionComponent from "../SectionComponent";
 
 const Cabinet = ({ title, subtext, text, textmobile, image, alt }) => {
   return (
